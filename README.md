@@ -143,32 +143,6 @@ Debug mode provides real-time visualization of the Game Boy's internal state:
 
 Debug components can be toggled individually using function keys (F1-F4).
 
-## Troubleshooting
-
-### Common Issues
-
-**"ROM file does not exist"**
-- Verify the ROM file path is correct
-- Ensure the file has read permissions
-
-**"Unsupported MBC type"**
-- The game uses an unsupported Memory Bank Controller
-- Check if the game is a valid Game Boy ROM
-
-**Black screen on startup**
-- Try running with `--debug` to see system state
-- Verify the ROM file is not corrupted
-
-**Poor performance**
-- Disable debug mode if enabled
-- Ensure SDL2 is using hardware acceleration
-
-### Performance Tips
-
-- Run without debug mode for best performance
-- Close other resource-intensive applications
-- Use Release build configuration for optimal speed
-
 ## Technical Details
 
 - **CPU**: Sharp LR35902 (8-bit, Z80-like)
@@ -198,17 +172,5 @@ make        # Build the emulator
 ```bash
 make clean  # Remove build files
 ```
-
-## License
-
-This project is for educational purposes. Game Boy and related trademarks are property of Nintendo Co., Ltd.
-
-## Contributing
-
-This is an educational project. For improvements or bug reports, please ensure changes maintain code quality and emulation accuracy.
-
-## Acknowledgments
-
-- Nintendo for the original Game Boy hardware
 - Game Boy development community for documentation and resources
 - SDL2 team for cross-platform graphics support
